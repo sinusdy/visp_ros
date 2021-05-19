@@ -26,11 +26,11 @@ int main(int argc, const char** argv)
     //! [Construction]
 
     //! [Setting camera topic]
-    g.setImageTopic("/camera/image_raw");
+    g.setImageTopic("/rtsp_camera/image_raw");
     //! [Setting camera topic]
     //! [Setting camera info]
     if (opt_use_camera_info) {
-      g.setCameraInfoTopic("/camera/camera_info");
+      g.setCameraInfoTopic("/rtsp_camera/camera_info");
       g.setRectify(true);
     }
     //! [Setting camera info]
